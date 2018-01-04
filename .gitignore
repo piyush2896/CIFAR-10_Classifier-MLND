@@ -1,4 +1,8 @@
 .ipynb_checkpoints
 __pycache__
 cifar-10-batches-py
-preprocess_batch_*.p
+preprocess_*.p
+checkpoint
+image_classification.data-00000-of-00001
+image_classification.index
+image_classification.meta
