@@ -9,12 +9,11 @@ The model is written using core functionalities of TensorFlow
 | 1            	| conv2d_maxpool 	|              1,792             	|
 | 2            	| conv2d_maxpool 	|             73,856             	|
 | 3            	| conv2d_maxpool 	|             295,168            	|
-| 4            	|     dropout    	|                0               	|
-| 5            	|     flatten    	|                0               	|
-| 6            	|   dense_layer  	|            2,097,664           	|
+| 4            	|     flatten    	|                0               	|
+| 5            	|   dense_layer  	|            2,097,664           	|
+| 6            	|     dropout    	|                0               	|
 | 7            	|   dense_layer  	|             262,656            	|
-| 8            	|     dropout    	|                0               	|
-| 9            	| output (Logit) 	|              5,130             	|
+| 8            	| output (Logit) 	|              5,130             	|
 
 Total Trainable Parameters: 2,736,266
 
