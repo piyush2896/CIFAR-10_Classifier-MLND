@@ -4,21 +4,23 @@ The model is written using core functionalities of TensorFlow
 
 ## Model Description
 
-| Layer Number 	| Layer Type     	| Number of Trainable Parameters 	|
-|--------------	|----------------	|--------------------------------	|
-| 1            	| conv2d_maxpool 	|              1,792             	|
-| 2            	| conv2d_maxpool 	|             73,856             	|
-| 3            	| conv2d_maxpool 	|             295,168            	|
-| 4            	|     flatten    	|                0               	|
-| 5            	|   dense_layer  	|            2,097,664           	|
-| 6            	|     dropout    	|                0               	|
-| 7            	|   dense_layer  	|             262,656            	|
-| 8            	| output (Logit) 	|              5,130             	|
+| Layer Number 	| Layer Type     	| Description             	|
+|--------------	|----------------	|--------------------------	|
+| 1            	| conv2d_maxpool 	|3x3, 64,  1x1, 2x2, 2x2*   |
+| 2            	| conv2d_maxpool 	|3x3, 128, 2x2, 2x2, 2x2*   |
+| 3            	| conv2d_maxpool 	|3x3, 256, 2x2, 2x2, 2x2*   |
+| 4            	|     flatten    	|out=256                   	|
+| 5            	|     dropout    	|keep_prob=0.5     	       	|
+| 6            	|   dense_layer  	|out=2048, ReLu            	|
+| 7            	|     dropout    	|keep_prob=0.5     	       	|
+| 8            	|   dense_layer  	|out=1024, ReLu            	|
+| 9            	|   dense_layer  	|out=512, ReLu             	|
+| 10           	| output (Logit) 	|out=10, Linear            	|
 
-Total Trainable Parameters: 2,736,266
+* Convolution Ksize, No. of Kernels, Convolution strides, Max Pool Ksize, Max Pool strides
 
 ## Final Results
-Test Accuracy: 0.7091
+Test Accuracy: 0.6976
 
 ## A Sample From Test
 ![](result.png)
