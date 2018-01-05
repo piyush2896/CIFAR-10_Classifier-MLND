@@ -17,7 +17,7 @@ The model is written using core functionalities of TensorFlow
 | 9            	|   dense_layer  	|out=512, ReLu             	|
 | 10           	| output (Logit) 	|out=10, Linear            	|
 
-* Convolution Ksize, No. of Kernels, Convolution strides, Max Pool Ksize, Max Pool strides
+"*" Convolution Ksize, No. of Kernels, Convolution strides, Max Pool Ksize, Max Pool strides
 
 ## Final Results
 Test Accuracy: 0.6976
